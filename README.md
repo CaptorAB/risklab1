@@ -13,6 +13,6 @@ Do git clone.
 Then
 
 ```
-npm i
+npm install
 npm start
 ```
