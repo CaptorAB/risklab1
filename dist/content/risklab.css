@@ -1,0 +1,756 @@
+body {
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+    background: #fff;
+}
+
+input,
+select,
+textarea {
+    max-width: 320px;
+}
+
+h1 {
+  font-family: 'GothamBlack';
+  font-size: 48px;
+  margin: 12px 0;
+}
+
+.navbar {
+    display: none;
+}
+
+.container>div.navbar-header {
+        margin-left: 0em;
+}
+
+.captorchart .tick line {
+    stroke: #d3d3d3;
+    opacity: 0.7;
+  stroke-dasharray: 3px;
+}
+
+.captorchart .axises text {
+    font-size: 12px;
+    font-weight: 700;
+    fill: #0d3243;
+}
+
+/*.captorchart .tick text {
+  fill: #333;
+}*/
+
+.captorchart .axis path {
+  fill: none;
+  stroke: #0d3243;
+  stroke-width: 1.5px;
+}
+
+/*.captorchart g.tick text {
+    font-size: 24px;
+}*/
+
+.captorchart g.plotarea text.debug {
+    font-size: 8px;
+}
+
+.allocslider .slider-handle {
+    display: none;
+}
+
+.allocslider .slider.slider-disabled .slider-track {
+  cursor: initial; /*not-allowed;*/ 
+}
+
+.allocslider .slider-selection {
+    background: rgba(59, 150, 210, .6);
+}
+
+.allocslider {
+    margin-bottom: 0.5em;
+}
+
+#srisk .slider-selection {
+    background: rgba(230, 76, 59, .6);
+}
+
+.risksection {
+    overflow: hidden;
+}
+
+.risksectionrow {
+    clear: both;
+    max-width: 465px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.riskwidget {
+    font-family: 'aileronregular';
+    font-size: 16px;
+    line-height: 1.4em;
+    float: left;
+    /*margin-bottom: 10px;*/
+    width: 465px;
+    /*background-color: #fff;*/
+    padding: 20px 12px 24px 8px;
+    border-top: 1px solid #DFDFDF;
+}
+
+.inputcolumn .riskwidget {
+    width: 100%;
+}
+
+.riskwidget h2 {
+  font-family: 'AileronBold';
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/*.riskwidget:nth-child(2) {
+    background: #f5f7f8;
+}*/
+
+#assets.riskwidget .left, #assets.riskwidget .right {
+    float: left;
+}
+
+#assets.riskwidget .left {
+    width: 49%;
+}
+
+#assets.riskwidget .right {
+    width: 51%;
+}
+
+.riskwidget .slider {
+    display: block;
+    /* margin: 0 auto; */
+}
+
+.riskwidget .slider.slider-horizontal {
+    height: 18px;
+}
+
+.riskwidget .slider.slider-horizontal .slider-track {
+  height: 7px;
+}
+
+.riskwidget .slider-track-high {
+  background-color: #e4e4e4;
+    border-radius: 1px;
+}
+
+.riskwidget .slider-selection {
+    background-color: #3B96D2;
+    border-radius: 1px;
+}
+
+.riskwidget .slider-handle {
+    margin-top: -6px; 
+    background-color: #3B96D2;
+    border-width: 3px;
+    border-color: #fff;
+    width: 18px;
+    height: 18px;
+}
+
+.riskwidget .tooltip-inner {
+  background-color: #223544;
+  border-radius: 1px;
+}
+
+.riskwidget .tooltip.top .tooltip-arrow {
+  border-top-color: #223544;
+}
+
+#growthforcastresult.riskwidget, #annualstats1.riskwidget {
+    padding: 0;
+}
+
+
+.risktable {
+    color: #607079;
+    margin: 12px;
+    border-radius: 5px;
+    border: 1px solid #dde8ed;
+    background-color: #fff;
+}
+
+.risktablerow {
+    padding: 8px 4%;
+    overflow: hidden;
+}
+
+.risktablerow:nth-child(2n) {
+    background: #f9f9f9;
+}
+
+.risktablerow span.left {
+    width: 53%;
+    float: left
+}
+
+.risktablerow span.right {
+    width: 44%;
+  float: left;
+  color: #0d3243;
+  text-align: right;
+  margin-left: 8px;
+}
+
+.risktablerow span.keyfigure {
+    margin-right: 0;
+}
+
+.risktablerow span.right input {
+    width: 50%;
+    text-align: right;
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid #dde8ed;
+    padding-right: 4px;
+    color: #0d3243;
+    border-radius: 5px;
+}
+
+div#barchart1, div#maxdrawdownchart {
+  /* height: 222px; */
+  /*margin: 0em 1.0em;*/
+}
+
+/*div#riskslider {
+  margin: 1.0em;
+}*/
+
+/*div#allocationsliders {
+  padding-bottom: 1em;
+}*/
+
+.returnsbarchart .bar.max {
+  fill: rgba(78, 185, 110, 1);
+}
+
+.returnsbarchart .bar.min {
+  fill: rgba(230, 76, 59, 1);
+}
+
+.returnsbarchart .axis path.domain, .growthforcastchart .axis path.domain {
+    display: none;
+}
+
+.returnsbarchart .y.axis text {
+    display: none;
+}
+
+p#idtext {
+    color: #e8e8e8;
+}
+
+div#maxdrawdowntext, div#returnstext {
+    margin: 1em;
+}
+
+.maxdrawdownchart .axis path {
+    stroke: none;
+}
+
+div.keyfigure {
+  font-family: 'aileronlight';
+  width: 100px;
+  height: 90px;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  padding-top: 8px;
+  line-height: 1.25em;
+  border-radius: 10px;
+}
+
+span.keyfigure {
+    color: white;
+    border-radius: 4px;
+    margin: 0.1em 0.4em 0.1em 0.4em;
+    padding: 0.05em 0.25em 0 0.25em;
+}
+
+div.keyfigure.negative, span.keyfigure.negative {
+    background: #E64C3B;
+}
+
+div.keyfigure.positive, span.keyfigure.positive {
+    background: #4EB96E;
+}
+
+div.keyfigure.neutral1, span.keyfigure.neutral1 {
+    background: #EFC319;
+}
+div.keyfigure.neutral2, span.keyfigure.neutral2 {
+    background: #3B96D2;
+}
+
+div#gfchart1 {
+    margin-bottom: 12px;
+}
+
+/*button:hover { background-color: LightSteelBlue; }
+button:focus { background-color: red; }
+button:active { background-color: SteelBlue; }*/
+
+button.riskbutton {
+    width: 28px;
+    height: 28px;
+    margin-top: 0px;
+    border: none;
+    padding: 6px 0;
+    background-color: transparent;
+    background-size: contain;
+    float: left;
+    position: absolute;
+    top: 14px;
+}
+
+#timeframe.riskwidget button.riskbutton {
+    top: 24px;
+}
+
+button.riskbutton.plus {
+    background-image: url("../Images/plus28.png");
+    right: 0;
+}
+
+button.riskbutton.minus {
+    background-image: url("../Images/minus28.png");
+    left: 0;
+}
+
+button.riskbutton:focus {
+    outline: 0;
+}
+
+#riskgauge.riskwidget h2 {
+  padding-top: 16px;
+}
+
+#riskgauge.riskwidget .left, #timeframe.riskwidget .left {
+    float: left;
+    width: 40%;
+}
+
+#riskgauge.riskwidget .left {
+    padding-top: 5px;
+}
+
+#timeframe.riskwidget div.right {
+    padding-top: 13px;
+}
+
+#riskgauge.riskwidget div.right, #timeframe.riskwidget div.right {
+    float: left;
+    width: 60%;
+}
+
+#timeframe.riskwidget .bottom div {
+font-family: 'aileronregular';
+  text-anchor: middle;
+  font-size: 13px;
+  font-weight: 700;
+  fill: #223544;
+    width: 28px;
+  text-align: center;
+  position: absolute; 
+}
+
+#timeframe.riskwidget .bottom div.minvalue {
+  top: 0px;
+  left: -1px;
+}
+
+#timeframe.riskwidget .bottom div.maxvalue {
+  top: 0px;
+  right: 0px;
+}
+
+#riskgauge.riskwidget .bottom {
+    /* width: 226px; */
+    height: 49px;
+    /*background-color: #ccc;*/
+    margin: 0 auto;
+    position: relative;
+}
+
+#timeframe.riskwidget .bottom {
+    margin: 0 auto;
+    position: relative;
+    /* width: 226px; */
+    height: 1px;
+}
+
+#timeframe.riskwidget .bottom h2 {
+  padding-top: 26px;
+}
+
+div#riskgauge1 {
+    /* width: 220px; */
+    margin: 0 auto;
+    padding: 0 3px;
+}
+
+div#risklevel1 {
+    margin: 0 auto;
+}
+
+#riskgauge1 .riskgauge g.arc path.back {
+	fill: #e4e4e4;
+}
+
+#riskgauge1 .riskgauge g.arc path.value {
+	fill: #EFC319;
+}
+
+div#masterriskgauge, div#mastertimeframe {
+    width: 465px;
+    height: 213px;
+    float: left;
+    margin-bottom: 1em;
+    background-size: contain;
+}
+
+.riskwidget #assetpiechart {
+  margin: 0 0;
+  padding-top: 12px;
+}
+
+.allocslider .slider.slider-horizontal {
+  width: 100%;
+}
+
+#allocationsliders .allocationname {
+    float: left;
+}
+
+#allocationsliders .allocationweight {
+    float: right;
+}
+
+#allocationsliders .allocationtext {
+    height: 16px;
+}
+
+.riskwidget #sa0 .slider-selection, .riskwidget #sa0 .slider-handle {
+    background-color: #3B96D2;
+}
+
+.riskwidget #sa1 .slider-selection, .riskwidget #sa1 .slider-handle {
+    background-color: #E64C3B;
+}
+
+.riskwidget #sa2 .slider-selection, .riskwidget #sa2 .slider-handle {
+    background-color: #4EB96E;
+}
+
+.riskwidget #sa3 .slider-selection, .riskwidget #sa3 .slider-handle {
+    background-color: #EFC319;
+}
+
+.riskwidget #sa4 .slider-selection, .riskwidget #sa4 .slider-handle {
+    background-color: #D2527F;
+}
+
+.riskwidget #sa5 .slider-selection, .riskwidget #sa5 .slider-handle {
+    background-color: #94A4A5;
+}
+
+.riskwidget #sa6 .slider-selection, .riskwidget #sa6 .slider-handle {
+    background-color: #674172;
+}
+#assets.riskwidget .right {
+    padding-left: 12px;
+}
+
+#srisk.slider {
+    width: initial;
+}
+
+.riskwidget .inputrows {
+    padding-top: 12px;
+}
+
+.riskwidget .inputrow h2 {
+    font-size: 1.05em;
+    display: inline;
+}
+
+.riskwidget .inputrow h2.left {
+    text-align: left;
+}
+
+.riskwidget .inputrow h2.right {
+    float: right;
+}
+
+.riskwidget .inputrow {
+    padding: 6px 3% 6px 5%;
+}
+
+#timeframe.riskwidget .inputrow {
+    padding: 6px 0% 6px 7%;
+}
+
+.riskwidget .inputrow .slider.slider-horizontal {
+    width: 100%;
+    display: inline-block;
+}
+
+svg.riskgauge path.click {
+	fill: rgba(255,255,255, 0);
+}
+
+.risklabcontent {
+    margin: 0 auto;
+    width: 435px;
+}
+
+.inputcolumn {
+    width: 435px;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+}
+
+#timeframeslider.slider {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.resultcolumn {
+    width: 435px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#assets1.riskwidget {
+        
+}
+
+.riskwidget #assetpiechart {
+    width: 240px;
+    height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.risksection .riskwidget #assetpiechart {
+    width: initial;
+}
+    
+.riskwidget {
+    width: 100%;
+    padding: 14px 4% 10px 3%;
+    margin-bottom: 0px;
+}
+
+.risksection .riskwidget {
+    width: 465px;
+    padding: 14px 1.5% 10px 2%;
+}
+
+.riskwidget .inputrows {
+    padding-top: 0px;
+}
+
+#timeframe.riskwidget .inputrows {
+  padding-top: 10px;
+}
+
+div.allocationname, div.allocationweight {
+    display: inline-block;
+}
+
+div.allocationweight {
+    float: right;
+}
+
+.allocslider {
+    margin-left: 7%;
+    margin-right: 5%;
+}
+
+div#barchart1 {
+    height: initial;
+}
+
+@media (max-width: 435px) {
+    .riskwidget {
+        /*width: 100%;*/
+        padding: 10px 10px 10px 6px;
+    }
+    .riskwidget:nth-child(2n) {
+        background: #f5f7f8;
+    }
+
+    #riskgauge.riskwidget .left, #timeframe.riskwidget .left {
+        width: 37%;
+    }
+
+    .risktable {
+        border: none;
+        border-radius: initial;
+        margin: 0;
+    }
+
+    .risktablerow {
+        padding: 8px 16px 8px 16px;
+    }
+
+    .riskwidget .inputrow {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    #timeframe.riskwidget .bottom {
+        width: 100%;
+    }
+
+    #timeframe.riskwidget .right .slider.slider-horizontal {
+        width: 88%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    #riskgauge.riskwidget .bottom {
+        width: 100%;
+    }
+
+    div#riskgauge1 {
+        width: 100%;
+    }
+
+    div#barchart1, div#maxdrawdown1, div#gfchart1 {
+        margin: 10px 10px 0 10px;
+    }
+
+    .inputcolumn, .risklabcontent, .riskwidget, .resultcolumn {
+        width: 100%;
+    }
+
+    .riskwidget {
+        padding: 10px 10px 10px 6px;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 495px) {
+    .container,.risksection {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+/*@media (min-width: 850px) {
+    .riskwidget {
+        border-top: none;
+        margin-bottom: 10px;
+    }
+}*/
+
+@media (min-width: 840px) {
+    #riskgauge.riskwidget .right {
+        padding-top: 7px;
+    }
+
+    .riskwidget {
+        /*border-radius: 5px;*/
+        border-top: none;
+    }
+
+    .riskwidget:nth-child(2n) {
+        background: initial;
+    }
+
+    .risksectionrow {
+        max-width: 970px;
+    }
+
+    .risksection {
+        border-top: 1px solid #DFDFDF;
+    }
+
+        .risksection:nth-child(2n) {
+            background: #f5f7f8;
+        }
+
+    .resultcolumn {
+        padding-left: 8px;
+        border-left: 1px solid #ddd;
+    }
+
+    .risklabcontent {
+        width: 880px;
+    }
+
+    .inputcolumn {
+        width: 400px;
+        padding-right: 8px;
+    }
+
+    #annualreturn.riskwidget .risktable {
+        margin-bottom: 18px;
+    }
+
+    #maxdrawdown.riskwidget .risktable {
+        margin-bottom: 34px;
+    }
+
+    #annualreturn.riskwidget, #maxdrawdown.riskwidget {
+        padding-top: 0px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .inputcolumn {
+        width: 320px;
+    }
+
+    .risklabcontent {
+        width: 1024px;
+    }
+
+    .resultcolumn {
+        width: 704px;
+    }
+
+    .riskwidget {
+        background: none;
+        width: 50%;
+        padding: 14px 2% 10px 1%;
+    }
+
+    .riskwidget #assetpiechart {
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .inputcolumn {
+        width: 435px;
+    }
+
+    .risklabcontent {
+        width: 1280px;
+    }
+
+    .resultcolumn {
+        width: 845px;
+    }
+
+    .riskwidget {
+        background: none;
+        width: 50%;
+    }
+
+    .riskwidget #assetpiechart {
+        padding-top: 20px;
+    }
+}
